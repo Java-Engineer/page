@@ -3,6 +3,7 @@ $(function(){
 	header();
 	left();
 	bottom();
+	//news();
 	slider();
 	$('.copy_ul').remove();
 	$('.link').remove();
@@ -15,6 +16,23 @@ function slider(){
 	htm.push('<a href="#" target="_blank"><img src="public/uploads/tupian/20130819152144_269.png" alt="" /></a>');
 	htm.push('<a href="#" target="_blank"><img src="public/uploads/tupian/20130724152721_808.png" alt="" /></a>');
 	$("#slider").html(htm.join(" "));
+}
+
+/***/
+function news(){
+	var htm = [];
+	htm.push('<h2 class="leftname"><span>News</span></h2>');
+	htm.push('<ul  class="list_ul">');
+	htm.push('<li><a href="#">KX-21 hematology analyze...</a></li>');
+	htm.push('<li><a href="#">Testing equipment mainte...</a></li>');
+	htm.push('<li><a href="#">Testing equipment mainte...</a></li>');
+	htm.push('<li><a href="#">CA1500-automatic coagula...</a></li>');
+	htm.push('<li><a href="#">Beckman biochemical anal...</a></li>');
+	htm.push('<li><a href="#">Medical equipment servic...</a></li>');
+	htm.push('<li><a href="#">Automatic biochemical an...</a></li>');
+	htm.push('<li><a href="#">2013 World biochemistry,...</a></li>');
+	htm.push('</ul>');
+	$(".news").html(htm.join(" "));
 }
 
 /**头部导入*/
@@ -146,14 +164,14 @@ function left(){
 	htm.push('<div class="news margin-top">                                                                     ');
 	htm.push('<h2 class="leftname"><span>News</span></h2>                                                       ');
 	htm.push('<ul  class="list_ul">                                                                             ');
-	htm.push('<li><a href="/newsrr-49.html">KX-21 hematology analyze...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-48.html">Testing equipment mainte...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-47.html">Testing equipment mainte...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-46.html">CA1500-automatic coagula...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-45.html">Beckman biochemical anal...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-44.html">Medical equipment servic...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-43.html">Automatic biochemical an...</a></li>                                ');
-	htm.push('<li><a href="/newsrr-42.html">2013 World biochemistry,...</a></li>                                ');
+	htm.push('<li><a href="#">KX-21 hematology analyze...</a></li>                                ');
+	htm.push('<li><a href="#">Testing equipment mainte...</a></li>                                ');
+	htm.push('<li><a href="#">Testing equipment mainte...</a></li>                                ');
+	htm.push('<li><a href="#">CA1500-automatic coagula...</a></li>                                ');
+	htm.push('<li><a href="#">Beckman biochemical anal...</a></li>                                ');
+	htm.push('<li><a href="#">Medical equipment servic...</a></li>                                ');
+	htm.push('<li><a href="#">Automatic biochemical an...</a></li>                                ');
+	htm.push('<li><a href="#">2013 World biochemistry,...</a></li>                                ');
 	htm.push('</ul>                                                                                             ');
 	htm.push('</div>                                                                                            ');
 	$(".leftbox").html(htm.join(" "));
